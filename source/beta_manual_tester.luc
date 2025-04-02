@@ -1,5 +1,5 @@
 module beta_manual_tester#(
-    CLK_FREQ ~ 1000 : CLK_FREQ > 0)  
+    CLK_FREQ ~ 10000000 : CLK_FREQ > 0)  
 (
     input clk,              // 100MHz clock
     input rst,            // reset button (active low)
