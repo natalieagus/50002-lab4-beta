@@ -13,11 +13,11 @@ module pc_unit (
     
     dff pc[32](#INIT(0),.clk(clk)) // PC Register
     
-    sig pcsel_out_sig[32]
-    sig pc_4sxtc3_2sig[32]
-    sig pc_4sxtc_sig[32]
-    sig pc_4sig[32]
-    sig pc_4raw[32]
+    sig pcsel_out_sig[32] // output of pcsel unit
+    sig pc_4sxtc32_sig[32] // raw pc + 4 + 4*SXT(C)
+    sig pc_4sxtc_sig[32] // pc + 4 + 4*SXT(C) with bit 31 handled
+    sig pc_4sig[32] // pc + 4 with bit 32 handled
+    sig pc_4raw[32] // raw pc + 4
     
     always {
         // default connections to silence errors
