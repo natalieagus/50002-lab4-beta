@@ -3,7 +3,7 @@ module instruction_rom #(
 )(
     input addr[$clog2(WORDS)], // this ROM is WORD addressable
     output out[32],
-output numinstr[10],
+output numinstr[10]
 ) {
     
     // Driver code, the bottommost instruction is the first instruction
