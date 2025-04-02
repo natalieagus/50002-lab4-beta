@@ -1,6 +1,6 @@
 {
     "project": {
-        "type": "V1.2",
+        "type": "V1.3",
         "projectName": "beta",
         "board": "Alchitry Au",
         "sourceFiles": [
@@ -142,13 +142,13 @@
             {
                 "file": {
                     "type": "Component",
-                    "path": "Constraints/alchitry.acf"
+                    "path": "Constraints/io_v1_pulldown.acf"
                 }
             },
             {
                 "file": {
-                    "type": "Component",
-                    "path": "Constraints/io.acf"
+                    "type": "DiskFile",
+                    "path": "constraint/alchitry.acf"
                 }
             }
         ],
